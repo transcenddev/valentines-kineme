@@ -18,9 +18,15 @@ body {
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
+
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .message {
+  padding: 1rem;
   font-size: 1rem;
   color: #fff;
   position: absolute;
@@ -30,6 +36,12 @@ body {
   --fl-speed: 0.8s;
 }
 
+@media (max-width: 768px) {
+  .message {
+    font-size: 0.9rem;
+  }
+
+}
 
 
 .night {
