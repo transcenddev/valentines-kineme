@@ -11,6 +11,7 @@ function changeImage() {
   yesButton.src = './assets/yes-check.png'; // Change the source of the image
   // Change window location to the desired HTML page
   setTimeout(function() {
+        alert('Panalo na naman sha');
         // Change window location to the desired HTML page
         window.location.href = 'flowers.html';
       }, 1000); // 3000 milliseconds = 3 seconds
