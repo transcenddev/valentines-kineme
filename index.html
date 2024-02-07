@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Reymar V. Mirante" />
+    <meta name="description" content="A Website for Valentines Kineme" />
+    <title>Valentines Kineme</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="./scripts/main.js" defer></script>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-text card-text__one card__wrapper animation-container">
+        <img src="./assets/will.png" class="animated-image" alt="" />
+        <img src="./assets/you.png" class="animated-image" alt="" />
+        <img src="./assets/heart.png" class="animated-image" alt="" />
+      </div>
+
+      <div class="card-text card-text__two card__wrapper animation-container">
+        <img src="./assets/sun.png" class="animated-image" alt="" />
+        <img src="./assets/be.png" class="animated-image" alt="" />
+        <img src="./assets/my.png" class="animated-image" alt="" />
+      </div>
+
+      <div class="card-text card-text__three card__wrapper animation-container">
+        <img src="./assets/flower.png" class="animated-image flower" alt="" />
+        <img
+          src="./assets/valentine.png"
+          class="animated-image valentine"
+          alt=""
+        />
+        <img src="./assets/question-mark.png" class="animated-image" alt="" />
+      </div>
+    </div>
+    <div class="card__wrapper card__button">
+      <img src="./assets/yes.png" class="button__yes" onclick="changeImage()" />
+      <img src="./assets/no.png" class="button__no" id="noButton" alt="" />
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p>This is the modal content.</p>
+      </div>
+    </div>
+  </body>
+</html>

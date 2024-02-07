@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  /* width: 100px; */
+  /* Ensures the image does not exceed the width of its container */
+  height: auto;
+  /* Allows the height to adjust proportionally to the width */
+  display: block;
+  /* Ensures no extra space is added beneath the image */
+}
+
+.card {
+  --main-color: #000;
+  --submain-color: #78858F;
+  --bg-color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background: var(--bg-color);
+
+  padding: 1rem;
+}
+
+.card__btn {
+  margin-top: 15px;
+  width: 76px;
+  height: 31px;
+  border: 2px solid var(--main-color);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--main-color);
+  background: var(--bg-color);
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.card__btn-solid {
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+
+.card__btn:hover {
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+
+.card__btn-solid:hover {
+  background: var(--bg-color);
+  color: var(--main-color);
+}
+
+.card__wrapper {
+  display: flex;
+}
+
+.card__button {
+  align-items: center;
+  justify-content: center;
+}
+
+.button__yes,
+.button__no {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+  img {
+    max-width: 100%;
+    width: 100px;
+    /* Ensures the image does not exceed the width of its container */
+    height: auto;
+    /* Allows the height to adjust proportionally to the width */
+    display: block;
+    /* Ensures no extra space is added beneath the image */
+  }
+
+  .flower {
+    display: none;
+  }
+
+  .valentine {
+    width: 70%;
+  }
+}
+
+modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
